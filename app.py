@@ -123,6 +123,3 @@ st.sidebar.markdown("<p class='sidebar-title'>Chat History Tools</p>", unsafe_al
 if st.session_state.chat_history:
     history_text = "\n".join([f"You: {user_msg}\nBot: {bot_msg}\n" for user_msg, bot_msg, _ in st.session_state.chat_history])
     st.sidebar.download_button("Download Chat History", data=history_text, file_name="chat_history.txt", mime="text/plain")
-
-
-# API KEY = "AIzaSyDS2owlcE48NTAUacffTg-f7Vd9o3xbzMo"
